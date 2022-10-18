@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+body {
+	background-color: rgb(227, 227, 227);
+	font-family: monospace;
+}
+.App {
+	background-color: rgb(194, 194, 194);
+	padding: 3rem;
+	box-shadow: 0 10px 3px 10px black;
+	border-radius: 5px;
+}
+h1 {
+	color: black;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px white;
+	text-align: center;
+	font-size: 2.5rem;
+}
+form {
+	margin-top: 3rem;
+}
+
+p {
+	height: 75px;
+	display: flex;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: 900;
+	background-color: rgb(255, 255, 221);
+	padding: 0.25rem;
+	margin: 1rem 0;
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding: 0 2rem;
+}
+span {
+	color: green;
+	margin-left: 1rem;
+}
+input,
+button {
+	font-family: inherit;
+}
+input {
+	height: 75px;
+	width: 100%;
+	padding-left: 2rem;
+	font-size: 3rem;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+input[type="number"]::-webkit-inner-spin-button {
+	opacity: 0;
+	cursor: pointer;
+}
+input:focus::placeholder {
+	opacity: 0;
+}
+input:focus {
+	outline: 0;
+	background-color: rgb(233, 255, 233);
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+button {
+	box-shadow: 0 5px 0 5px black;
+}
+button:not(.reset) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	font-size: 50px;
+	filter: grayscale(0.5);
+	line-height: 100px;
+	background-color: white;
+	transition: all 300ms;
+}
+button:hover {
+	background-color: rgb(218, 255, 218);
+	cursor: pointer;
+}
+button:active {
+	transform: scale(0.95) translateY(5px);
+	box-shadow: 0 0 0 5px black;
+	background-color: rgb(168, 208, 255);
+}
+.reset {
+	padding: 1rem;
+	margin-top: 2rem;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 700;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.reset:last-child {
+	margin-left: 2rem;
+}
+.input {
+	position: relative;
+	margin-bottom: 2.5rem;
+}
+.more,
+.less {
+	position: absolute;
+	right: 0;
+	font-size: 2.5rem;
+	width: 25px;
+	height: 35px;
+	background-color: grey;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	border: 1px solid grey;
+}
+.more {
+	top: 0;
+	border-radius: 0 5px 0 0;
+}
+.less {
+	bottom: 0;
+	border-radius: 0 0 5px 0;
+}
+em {
+	position: absolute;
+	width: 100%;
+	top: 105%;
+	left: 2rem;
+	font-size: 1.25rem;
+	color: darkred;
+}
